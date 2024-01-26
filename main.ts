@@ -35,7 +35,7 @@ export default class MyPlugin extends Plugin {
 					.create(folder + "/" + nextZettelFilename, "")
 					.then((file) => {
 						// add a link to the new file
-						editor.replaceSelection("[[ " + nextZettelId + " ]]");
+						editor.replaceSelection("[[" + nextZettelId + "]]");
 						// open the new file
 						this.app.workspace.openLinkText(
 							nextZettelFilename,
